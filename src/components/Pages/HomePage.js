@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Header from '../UI/Header.js';
 import '../../styles/Homepage.css';
-// import BackgroundMedia from './BackgroundMedia';
+// import bg from 'renamed-homepage.jpg';
+import TemplatePage from './TemplatePage.js';
 
 const texts = [
   "Swagatham.   ",
@@ -51,19 +51,15 @@ const HomePage = () => {
 
   return (
     <>
-    <div className="container">
-    <Header />
-        <div className="image-background">
-          <img src="renamed-homepage.jpg" alt="spidey" />
-        </div>
-      <div className="content">
-        <div className="typewriter-container">
-          <div className="typewriter">
-            <p>{displayText}<span className={blink ? 'blink' : ''}>|</span></p>
+      <TemplatePage src={"renamed-homepage.jpg"} type='image'>
+        <div className="content">
+          <div className="typewriter-container">
+            <div className="typewriter">
+              <p>{displayText}<span className={blink ? 'blink' : ''}>|</span></p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </TemplatePage>
     </>
   );
 };
