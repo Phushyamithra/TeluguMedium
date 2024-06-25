@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles for Account Page */
+.account-page-container {
+  @apply flex flex-col lg:flex-row min-h-screen p-8;
+  margin-top: 60px;
+  background-color: transparent;
+}
+
+.orders-section {
+  @apply w-full lg:w-1/4 p-5 bg-white shadow-lg rounded-lg mb-5 lg:mb-0 lg:mr-5;
+}
+
+.account-details-section {
+  @apply w-full lg:w-3/4 p-5 bg-white shadow-lg rounded-lg;
+}
+
+.heading {
+  @apply text-xl font-bold mb-4 text-gray-700;
+}
+
+.orders-list {
+  @apply space-y-4;
+}
+
+.order-item {
+  @apply p-3 bg-gray-50 rounded-md shadow;
+}
+
+.order-title {
+  @apply text-lg font-semibold text-gray-600;
+}
+
+.order-date,
+.order-total {
+  @apply text-sm text-gray-500;
+}
+
+.account-details {
+  @apply space-y-4;
+}
+
+.detail-item {
+  @apply mb-4;
+}
+
+.detail-label {
+  @apply block text-sm font-medium text-gray-600;
+}
+
+.input-field {
+  @apply w-full mt-1 p-2 border border-gray-300 rounded-md shadow-sm;
+}
+
+/* Responsive Styling */
+@media (min-width: 640px) {
+  .account-page-container {
+    @apply flex-row;
+  }
+}

@@ -4,6 +4,7 @@ import { FaHeart, FaShoppingCart } from "react-icons/fa";
 import { TiThListOutline } from "react-icons/ti";
 import '../../styles/header.css';
 import half_logo from '../../Assets/Half_logo.png';
+import half_logo_white from '../../Assets/Half_logo-white.png'
 import CartPage from '../Pages/CartPage.js';
 import sweat_side from '../../Assets/clothes/sweat_side.png';
 import hoodie_side from '../../Assets/clothes/hoodie_side.png';
@@ -25,14 +26,16 @@ const Header = () => {
   const toggleCart = () => {
     setCartVisible(!cartVisible);
   };
-
+  const [scrolled, setScrolled] = useState(false);
   // Effect to handle scroll event and change header background
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector('.header-container');
       if (!isOpen && window.scrollY > 0) {
+        setScrolled(true);
         header.classList.add('header-scrolled');
       } else {
+        setScrolled(false);
         header.classList.remove('header-scrolled');
       }
     };
@@ -53,7 +56,7 @@ const Header = () => {
         <Link to="/shop" className="nav-link button_slide slide_down">SHOP</Link>
         <Link to="/story" className="nav-link button_slide slide_down">OUR STORY</Link>
 
-        <img className="nav-link logo" src={half_logo} alt="Small Logo" />
+        <img className="nav-link logo" src={scrolled === false ? half_logo : half_logo_white} alt="Small Logo" />
 
         <Link to="/contact" className="nav-link button_slide slide_down">CONTACT</Link>
         <Link to="/account" className="nav-link button_slide slide_down">ACCOUNT</Link>

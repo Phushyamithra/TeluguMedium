@@ -4,7 +4,7 @@
 
 /* Footer section */
 .footer-container {
-  @apply w-full bg-[#2B1A3A] flex flex-row p-5 m-0 bottom-0 ;
+  @apply w-full bg-[#2B1A3A] flex flex-row p-5 m-0 bottom-0;
 }
 
 .footer-links {
@@ -24,11 +24,11 @@
 }
 
 .footer-item .links:hover::before {
-  @apply transform scale-110 shadow-[0_0_15px_#ffee10];
+  @apply transform scale-110 shadow-[0_0_15px_#3c50e6];
 }
 
 .footer-item .links:hover {
-  @apply text-[#ffee10] shadow-[0_0_5px_#ffee10];
+  @apply text-[#3c50e6] shadow-[0_0_5px_#3c50e6];
 }
 
 .footerLogoSection {

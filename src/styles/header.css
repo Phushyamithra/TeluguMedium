@@ -17,7 +17,7 @@
 }
 
 .nav-menu {
-  @apply  flex-row flex items-center justify-center duration-300 ease-out p-4 z-40;
+  @apply flex-row flex items-center justify-center duration-300 ease-out p-4 z-40;
 }
 
 .header-container .nav-link {
@@ -45,7 +45,8 @@
 }
 
 .header-scrolled {
-  @apply h-24 ;
+  @apply h-24;
+  background-color: #0474dd;
   box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.3); /* Optional: Add box-shadow for a subtle effect */
   backdrop-filter: blur(10px); /* Add blur effect to the background content */
 }
@@ -63,7 +64,6 @@
   .header-container .logo {
     @apply hidden;
   }
-
 
   .mobile {
     @apply flex flex-row w-full justify-between items-center;

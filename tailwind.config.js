@@ -33,6 +33,15 @@ module.exports = {
       transitionDuration: {
         '40': '0.04s',
       },
+      colors: {
+        lightBlue: '#f0f8ff',
+        lightGray: '#f7fafc',
+        primary: '#4caf50',
+        secondary: '#8bc34a',
+      },
+      spacing: {
+        '128': '32rem',
+      },
     },
     utilities: {
       // Define your custom utility
