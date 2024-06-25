@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../../styles/Homepage.css';
-// import bg from 'renamed-homepage.jpg';
+import bg from '../../Assets/bg/home.jpg';
 import TemplatePage from './TemplatePage.js';
 
 const texts = [
@@ -51,7 +51,7 @@ const HomePage = () => {
 
   return (
     <>
-      <TemplatePage src={"renamed-homepage.jpg"} type='image'>
+      <TemplatePage src={bg} type='image'>
         <div className="content">
           <div className="typewriter-container">
             <div className="typewriter">
