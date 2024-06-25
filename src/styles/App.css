@@ -5,5 +5,5 @@
 .App {
   @apply font-kanit;
   text-align: center;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
