@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Footer section */
+.footer-container {
+  @apply w-full bg-[#2B1A3A] flex flex-row p-5 m-0 bottom-0 ;
+}
+
+.footer-links {
+  @apply flex justify-center items-center flex-row mb-5 pl-5;
+}
+
+.footer-item {
+  @apply m-2;
+}
+
+.footer-item .links {
+  @apply relative inline-block w-14 h-14 leading-[55px] bg-[#333] rounded-full text-[30px] text-[#666] transition duration-500 text-center;
+}
+
+.footer-item .links::before {
+  @apply absolute top-0 left-0 w-full h-full rounded-full bg-[#ffee10] transition duration-500 transform scale-90 -z-10;
+}
+
+.footer-item .links:hover::before {
+  @apply transform scale-110 shadow-[0_0_15px_#ffee10];
+}
+
+.footer-item .links:hover {
+  @apply text-[#ffee10] shadow-[0_0_5px_#ffee10];
+}
+
+.footerLogoSection {
+  @apply flex flex-col items-center text-center ml-72;
+}
+
+.footerLogo {
+  @apply w-3/4 max-w-full ml-72;
+}
+
+.copyright {
+  @apply mt-3 text-white ml-96;
+}
+
+/* Tablets and above */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .footer-container {
+    @apply flex-col justify-between p-5;
+  }
+
+  .footer-links {
+    @apply mb-0;
+  }
+
+  .footerLogoSection {
+    @apply flex flex-col;
+  }
+
+  .footerLogoSection .footerLogo {
+    @apply -ml-20 w-3/4;
+  }
+
+  .copyright {
+    @apply text-white -ml-72;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 600px) {
+  .footer-container {
+    @apply flex-col justify-between p-5;
+  }
+
+  .footer-links {
+    @apply mt-2 mb-0;
+  }
+
+  .footer-item {
+    @apply m-1;
+  }
+
+  .footer-item .links {
+    @apply w-14 h-14 leading-[60px] text-[30px] p-0 mb-0 border-0;
+  }
+
+  .footerLogoSection {
+    @apply flex flex-col m-0;
+  }
+
+  .footerLogoSection .footerLogo {
+    @apply h-24 m-0 w-full;
+  }
+
+  .copyright {
+    @apply text-white m-0 mt-7;
+  }
+}

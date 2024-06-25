@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-container {
+  @apply justify-center px-10 flex flex-row h-24 w-full items-center bg-transparent font-bold transition-all duration-300 ease-in-out z-30 fixed;
+}
+
+.button_slide {
+  @apply text-white rounded-full px-5 py-2 font-bold tracking-wide cursor-pointer transition-box-shadow-color duration-40 ease-out mx-2;
+}
+
+.slide_down:hover,
+.slide_down:focus,
+.slide_down:active {
+  @apply shadow-inset-custom text-black;
+}
+
+.nav-menu {
+  @apply  flex-row flex items-center justify-center duration-300 ease-out p-4 z-40;
+}
+
+.header-container .nav-link {
+  @apply text-base;
+}
+
+.header-container .logo {
+  @apply w-20 h-auto;
+}
+
+.burger-icon {
+  @apply hidden cursor-pointer text-xs text-white;
+}
+
+.logoMedia {
+  @apply hidden;
+}
+
+.background-overlay {
+  @apply fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-md z-20 hidden;
+}
+
+.header-container.open .background-overlay {
+  @apply block;
+}
+
+.header-scrolled {
+  @apply h-24 ;
+  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.3); /* Optional: Add box-shadow for a subtle effect */
+  backdrop-filter: blur(10px); /* Add blur effect to the background content */
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header-container {
+    @apply flex-col justify-center mb-4 right-32 mt-10 left-0 relative;
+  }
+
+  .header-container .nav-menu {
+    @apply hidden;
+  }
+
+  .header-container .logo {
+    @apply hidden;
+  }
+
+
+  .mobile {
+    @apply flex flex-row w-full justify-between items-center;
+  }
+
+  .burger-icon {
+    @apply flex text-5xl transform top-14 right-24 z-40;
+  }
+
+  .logoMedia {
+    @apply flex w-40 h-auto  ml-80 z-40; /* Adjust size and make the background transparent */
+  }
+
+  .mobile-nav-menu {
+    @apply flex flex-col w-full z-40 top-9;
+    margin-left: -520px;
+    margin-top: 60rem;
+  }
+
+  .mobile-nav-menu .nav-link {
+    @apply text-5xl;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 600px) {
+  .header-container {
+    @apply flex-col justify-stretch mb-4 left-28 right-28 mt-3;
+  }
+
+  .header-container .nav-menu {
+    @apply hidden;
+  }
+
+  .header-container .logo {
+    @apply w-28 top-4;
+  }
+
+  .mobile {
+    @apply w-full h-full;
+  }
+
+  .burger-icon {
+    @apply flex text-3xl absolute transform -translate-x-1/2 top-16 -right-14 z-40;
+  }
+
+  .header-container .nav-menu.left,
+  .header-container .nav-menu.right {
+    @apply hidden;
+  }
+
+  .mobile-nav-menu {
+    @apply flex flex-col w-full mt-48 z-40;
+  }
+
+  .mobile-nav-menu .nav-link {
+    @apply text-3xl;
+  }
+}

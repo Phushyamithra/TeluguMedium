@@ -1,0 +1,141 @@
+/* General Styles */
+.contact-page {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 100px;
+    overflow: hidden;
+}
+
+/* Contact Form Styles */
+.contact-container, .faq-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-container h1, .faq-container h1 {
+    text-align: center;
+    color: #4b3a27;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4b3a27;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #4b3a27;
+    transition: border-color 0.3s ease;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4b3a27;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #4b3a27;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s ease-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #3b2a1a;
+    transform: translateY(-3px); /* Add slight lift effect on hover */
+}
+
+/* FAQ Styles */
+.faq-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.faq h3 {
+    color: #4b3a27;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.faq p {
+    color: #4b3a27;
+    line-height: 1.6;
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .contact-page{
+        flex-direction: column;
+        overflow-y: auto;
+        
+    }
+    .contact-container{
+        margin-top: 30%;
+
+    }
+    .faq-container{
+        height: 80%;
+    }
+    .faq h3, .faq p {
+        font-size: 1rem;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 600px) {
+    .contact-page{
+        flex-direction: column;
+    }
+    .contact-container{
+        margin-top: 200%;
+    }
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .faq h3 {
+        font-size: 1rem;
+    }
+
+    .faq p {
+        font-size: 0.9rem;
+    }
+}
