@@ -38,6 +38,8 @@ module.exports = {
         lightGray: '#f7fafc',
         primary: '#4caf50',
         secondary: '#8bc34a',
+        'wishlist-bg': '#ffecd2', // Example custom color
+        'wishlist-bg-gradient-end': '#fcb69f'
       },
       spacing: {
         '128': '32rem',

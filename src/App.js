@@ -6,8 +6,9 @@ import ContactPage from './components/Pages/ContactPage';
 import AccountPage from './components/Pages/AccountPage';
 import WishListPage from './components/Pages/WishListPage';
 import HomePage from './components/Pages/HomePage';
+import LoginPage from './components/Pages/LoginPage';
 
-const App=()=> {
+const App = () => {
   return (
     <div className="App">
 
@@ -15,10 +16,11 @@ const App=()=> {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/story" element={<StoryPage />} />
-          <Route path="/shop" element={<ShopPage/>} />
+          <Route path="/shop" element={<ShopPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/account" element={<AccountPage />} />
-          <Route path="/wishlist" element={<WishListPage/>}/>
+          <Route path="/wishlist" element={<WishListPage />} />
+          <Route path="/login" element={<LoginPage />} />
           {/* <Route path="/product/:id" element={<Product />} /> 
           <Route path="/per-type/:type" element={<PerType />} />  */}
         </Routes>
