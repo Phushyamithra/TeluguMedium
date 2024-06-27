@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/accountpage.css';
 import TemplatePage from './TemplatePage';
-import bg from '../../Assets/bg-assets/wall1.jpg'
+import bg from '../../Assets/bg/wall1.jpg'
 const AccountPage = () => {
   return (
     <TemplatePage src={bg} type='image'>

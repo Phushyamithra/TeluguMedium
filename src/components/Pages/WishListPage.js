@@ -1,5 +1,5 @@
 import React from 'react';
-import bg from '../../Assets/bg-assets/wall4.jpg'
+import bg from '../../Assets/bg/wall4.jpg'
 import '../../styles/wishlistpage.css';
 import hoodie from '../../Assets/clothes/card-hoodie1.jpg';
 import tee from '../../Assets/clothes/card-tee1.jpg';

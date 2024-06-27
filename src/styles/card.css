@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .card {
-  @apply max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg border border-gray-200;
+  @apply max-w-sm mx-auto overflow-hidden shadow-lg border border-gray-200;
 }
 
 .card-image {
@@ -27,7 +27,7 @@
 }
 
 .size-buttons {
-  @apply flex space-x-2 mt-1;
+  @apply flex justify-center flex-row space-x-2 mt-1;
 }
 
 .size-button {

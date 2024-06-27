@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../styles/storypage.css';
 import TemplatePage from './TemplatePage.js';
-import bg from '../../Assets/bg-assets/m5.jpg';
+import bg from '../../Assets/bg/m5.jpg';
 
 const firstPartText = `Story started in the streets of Nagole, Hyderabad,
 before life took Gopal to the shores of America.

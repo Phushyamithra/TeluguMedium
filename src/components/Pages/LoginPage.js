@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TemplatePage from './TemplatePage.js';
-import bg from '../../Assets/bg-assets/wall1.jpg';
+import bg from '../../Assets/bg/wall1.jpg';
 import '../../styles/loginpage.css'
 import { useAuth } from '../context/auth-context.js';
 

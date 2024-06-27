@@ -5,11 +5,12 @@ import tee_side from '../../Assets/shop-assets/tee_side.png';
 import shirt_side from '../../Assets/shop-assets/shirt_side.png';
 import sweat_side from '../../Assets/shop-assets/sweat_side.png';
 import hoodie_side from '../../Assets/shop-assets/hoodie_side.png';
-import bg from '../../Assets/bg-assets/wall2.jpg';
+import bg from '../../Assets/bg/wall2.jpg';
 import dropImage1 from '../../Assets/shop-assets/drop_2.jpg';
 import dropImage2 from '../../Assets/shop-assets/drop_3.jpg';
 import dropImage3 from '../../Assets/shop-assets/drop_4.jpeg';
 import Slider from '../UI/Slider.js';
+import combo from '../../Assets/shop-assets/combo.png';
 
 // Import ColorThief here
 import ColorThief from 'colorthief';
@@ -57,27 +58,36 @@ const ShopPage = () => {
         { img: dropImage3, name: 'Spiderverse' }
     ];
 
+    const handleCategoryClick = () => {
+        const url = window.location.origin + '/list';
+        window.open(url, '_blank');
+    };
+
     return (
         <>
             <TemplatePage src={bg} type='image'>
                 <div className="shop-content">
                     <h2 className='headings'>Categories</h2>
                     <section className="categories">
-                        <div className="category-item">
-                            <h3 >Hoodies</h3>
+                        <div className="category-item" onClick={handleCategoryClick}>
+                            <h3>Hoodies</h3>
                             <img src={hoodie_side} alt="Hoodies" />
                         </div>
-                        <div className="category-item">
+                        <div className="category-item" onClick={handleCategoryClick}>
                             <h3>Sweatshirts</h3>
                             <img src={sweat_side} alt="Sweatshirts" />
                         </div>
-                        <div className="category-item">
+                        <div className="category-item" onClick={handleCategoryClick}>
                             <h3>Shirts</h3>
                             <img src={shirt_side} alt="Shirts" />
                         </div>
-                        <div className="category-item">
+                        <div className="category-item" onClick={handleCategoryClick}>
                             <h3>Tees</h3>
                             <img src={tee_side} alt="Tees" />
+                        </div>
+                        <div className="category-item" onClick={handleCategoryClick}>
+                            <h3>View All</h3>
+                            <img src={combo} alt="Combo" />
                         </div>
                     </section>
                     <h2 className='headings'>Drops</h2>

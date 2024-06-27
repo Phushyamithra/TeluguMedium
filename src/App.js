@@ -7,6 +7,7 @@ import AccountPage from './components/Pages/AccountPage';
 import WishListPage from './components/Pages/WishListPage';
 import HomePage from './components/Pages/HomePage';
 import LoginPage from './components/Pages/LoginPage';
+import ListPage from './components/Pages/ListPage';
 
 const App = () => {
   return (
@@ -20,9 +21,8 @@ const App = () => {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/account" element={<AccountPage />} />
           <Route path="/wishlist" element={<WishListPage />} />
+          <Route path="/list" element={<ListPage />} />
           <Route path="/login" element={<LoginPage />} />
-          {/* <Route path="/product/:id" element={<Product />} /> 
-          <Route path="/per-type/:type" element={<PerType />} />  */}
         </Routes>
       </Router>
     </div>

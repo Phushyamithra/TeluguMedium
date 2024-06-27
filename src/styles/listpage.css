@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles (if needed) */
+.filters-container {
+  @apply w-full md:w-1/4 p-4;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Slightly transparent background */
+}
+
+.filter-category {
+  @apply mb-4;
+}
+
+.filter-title {
+  @apply font-bold text-lg mb-2;
+  color: #2d3748; /* Custom color for filter headings */
+}
+
+.filter-option {
+  @apply mb-1;
+}
+
+.filter-checkbox {
+  @apply mr-2;
+}
+
+.products-container {
+  @apply w-full md:w-3/4 p-4;
+}
+
+.sorting-container {
+  @apply flex justify-end items-center mb-4;
+}
+
+.sort-select {
+  @apply p-2 border rounded;
+}
+
+.product-cards-container {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4;
+}
+
+.product-card {
+  @apply bg-white p-4 rounded-lg shadow-md transition transform;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  @apply translate-y-[-5px];
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.listpage-container {
+  @apply mt-24 p-4 flex flex-row;
+}
