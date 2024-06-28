@@ -51,7 +51,7 @@ const Card = ({ image, title, price }) => {
                     </div>
                 </div>
                 <div className="card-footer">
-                    <span className="price">{price}</span>
+                    <span className="price">{price}$</span>
                     <button className="add-to-cart-button">
                         Add to cart
                     </button>

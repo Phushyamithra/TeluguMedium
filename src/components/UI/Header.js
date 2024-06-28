@@ -60,7 +60,11 @@ const Header = () => {
 
         <Link to="/contact" className="nav-link button_slide slide_down">CONTACT</Link>
         <Link to="/account" className="nav-link button_slide slide_down">ACCOUNT</Link>
+        <Link to="/account" className="nav-link button_slide slide_down">READ</Link>
+      </div>
+      <div className='nav-icons'>
         <Link to="/wishlist" className="nav-link button_slide slide_down"><FaHeart /></Link>
+
         <span className="nav-link button_slide slide_down"><FaShoppingCart onClick={toggleCart} /></span>
       </div>
       <div className="mobile">
@@ -76,6 +80,7 @@ const Header = () => {
               <Link to="/contact" className="nav-link button_slide slide_down">CONTACT</Link>
               <Link to="/account" className="nav-link button_slide slide_down">ACCOUNT</Link>
               <Link to="/favorites" className="nav-link button_slide slide_down">WISHLIST</Link>
+
               <span className="nav-link button_slide slide_down" onClick={toggleCart}>CART</span>
             </div>
           )

@@ -33,83 +33,83 @@ const items = [
         image: hoodie, // Adjusted path
         theme: "Anime",
         category: "hoodies",
-        price: "270$"
+        price: 270
     },
     {
         id: 2,
         image: hoodie1, // Adjusted path
         theme: "Horror",
         category: "hoodies",
-        price: "270$"
+        price: 270
     },
     {
         id: 3,
         image: hoodie2, // Adjusted path
         theme: "Movie",
         category: "hoodies",
-        price: "270$"
+        price: 290
     },
     {
-        id: 1,
+        id: 4,
         image: shirt1, // Adjusted path
         theme: "Anime",
         category: "shirt",
-        price: "270$"
+        price: 300
     },
     {
-        id: 2,
+        id: 5,
         image: shirt2, // Adjusted path
         theme: "Movie",
         category: "shirt",
-        price: "270$"
+        price: 870
     },
     {
-        id: 3,
+        id: 6,
         image: shirt3, // Adjusted path
         theme: "Cartoon",
         category: "shirt",
-        price: "270$"
+        price: 500
     },
     {
-        id: 4,
+        id: 7,
         image: shirt4, // Adjusted path
         theme: "Horror",
         category: "shirt",
-        price: "270$"
+        price: 200
     },
     {
-        id: 1,
+        id: 8,
         image: tee1, // Adjusted path
         theme: "Anime",
         category: "tee",
-        price: "270$"
+        price: 270
     },
     {
-        id: 2,
+        id: 9,
         image: tee2, // Adjusted path
         theme: "Horror",
         category: "tee",
-        price: "270$"
+        price: 1000
     },
     {
-        id: 3,
+        id: 10,
         image: tee3, // Adjusted path
         theme: "Cartoon",
         category: "tee",
-        price: "270$"
+        price: 1800
     },
     {
-        id: 4,
+        id: 11,
         image: tee4, // Adjusted path
         theme: "Horror",
         category: "tee",
-        price: "270$"
+        price: 100
     }, {
-        id: 1,
+        id: 12,
         image: sweat, // Adjusted path
         theme: "Anime",
         category: "sweats",
-        price: "270$"
+        price: 120
     }
 ];
 
