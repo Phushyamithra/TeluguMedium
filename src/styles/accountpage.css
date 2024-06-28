@@ -4,17 +4,18 @@
 
 /* Custom Styles for Account Page */
 .account-page-container {
-  @apply flex flex-col lg:flex-row min-h-screen p-8;
-  margin-top: 60px;
+  @apply flex flex-row p-8;
+  margin-top: 80px;
   background-color: transparent;
+  overflow-x: hidden;
 }
 
 .orders-section {
-  @apply w-full lg:w-1/4 p-5 bg-white shadow-lg rounded-lg mb-5 lg:mb-0 lg:mr-5;
+  @apply w-1/2 p-5 bg-red-100 shadow-lg rounded-sm mb-5 mr-5;
 }
 
 .account-details-section {
-  @apply w-full lg:w-3/4 p-5 bg-white shadow-lg rounded-lg;
+  @apply w-full p-5 bg-red-100 shadow-lg rounded-sm;
 }
 
 .heading {
@@ -54,9 +55,86 @@
   @apply w-full mt-1 p-2 border border-gray-300 rounded-md shadow-sm;
 }
 
-/* Responsive Styling */
-@media (min-width: 640px) {
+.button-class {
+  background-color: rgb(239, 174, 144);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Tablets */
+@media (min-width: 641px) and (max-width: 1024px) {
   .account-page-container {
-    @apply flex-row;
+    @apply flex-col md:flex-row;
+    margin-top: 50px; /* Adjust as necessary */
+    padding: 6px; /* Adjust as necessary */
+  }
+
+  .orders-section,
+  .account-details-section {
+    @apply w-full md:w-1/2 p-4;
+  }
+
+  .orders-section {
+    @apply mb-4 md:mb-0 md:mr-4;
+  }
+
+  .heading {
+    @apply text-lg;
+  }
+
+  .order-item {
+    @apply p-3;
+  }
+
+  .order-title {
+    @apply text-lg;
+  }
+
+  .order-date,
+  .order-total {
+    @apply text-sm;
+  }
+
+  .input-field {
+    @apply p-2;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 640px) {
+  .account-page-container {
+    @apply flex-col;
+    margin-top: 40px; /* Adjust as necessary */
+    padding: 4px; /* Adjust as necessary */
+  }
+
+  .orders-section,
+  .account-details-section {
+    @apply w-full p-3;
+  }
+
+  .orders-section {
+    @apply mb-4;
+  }
+
+  .heading {
+    @apply text-lg;
+  }
+
+  .order-item {
+    @apply p-2;
+  }
+
+  .order-title {
+    @apply text-base;
+  }
+
+  .order-date,
+  .order-total {
+    @apply text-xs;
+  }
+
+  .input-field {
+    @apply p-1;
   }
 }

@@ -63,6 +63,7 @@ const AccountPage = () => {
                 className="input-field"
               />
             </div>
+            <button className='button-class'>Update details</button>
             {/* Add more account details as needed */}
           </div>
         </div>

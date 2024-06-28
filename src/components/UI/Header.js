@@ -31,7 +31,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector('.header-container');
-      if (!isOpen && window.scrollY > 0) {
+      if (!isOpen && window.scrollY > 0 && window.innerWidth > 1024) {
         setScrolled(true);
         header.classList.add('header-scrolled');
       } else {
@@ -69,6 +69,8 @@ const Header = () => {
       </div>
       <div className="mobile">
         <img className="logoMedia" src={half_logo} alt="Small Logo" />
+        <span className="mobile cart "><FaShoppingCart onClick={toggleCart} /></span>
+
         <TiThListOutline className='burger-icon burger-right' onClick={toggleMenu} />
         {isOpen && <div className="background-overlay" onClick={toggleMenu}></div>}
         {

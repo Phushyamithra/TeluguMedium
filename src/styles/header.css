@@ -18,7 +18,6 @@
 
 .nav-menu {
   @apply flex-row flex items-center justify-center duration-300 ease-out p-4 z-40 ml-64;
-  /* display: inline-flex; */
 }
 
 .nav-icons {
@@ -55,7 +54,9 @@
   box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.3); /* Optional: Add box-shadow for a subtle effect */
   backdrop-filter: blur(10px); /* Add blur effect to the background content */
 }
-
+.mobile .cart {
+  @apply text-white hidden;
+}
 /* Tablets */
 @media (min-width: 601px) and (max-width: 1024px) {
   .header-container {
@@ -65,7 +66,12 @@
   .header-container .nav-menu {
     @apply hidden;
   }
-
+  .mobile {
+    @apply flex flex-col;
+  }
+  .mobile .cart {
+    @apply flex text-5xl absolute transform translate-x-1/2 top-6  left-48 z-40;
+  }
   .nav-icons {
     @apply hidden;
   }
@@ -83,11 +89,11 @@
   }
 
   .burger-icon {
-    @apply flex text-5xl transform top-14 right-24 z-40;
+    @apply flex text-5xl absolute transform -translate-x-1/2 top-6 right-10 z-40;
   }
 
   .logoMedia {
-    @apply flex w-40 h-auto  ml-80 z-40; /* Adjust size and make the background transparent */
+    @apply flex w-40 ml-72 z-40; /* Adjust size and make the background transparent */
   }
 
   .mobile-nav-menu {
@@ -107,11 +113,14 @@
     @apply flex-col justify-stretch mb-4 right-28 mt-3;
   }
   .header-scrolled {
-    @apply hidden; /* Add blur effect to the background content */
+    @apply flex justify-stretch mb-4 right-28 mt-3; /* Add blur effect to the background content */
   }
 
   .header-container .nav-menu {
     @apply hidden;
+  }
+  .mobile .cart {
+    @apply flex text-3xl absolute transform translate-x-1/2 top-16  left-56 z-40;
   }
   .nav-icons {
     @apply hidden;
@@ -128,7 +137,7 @@
   }
 
   .burger-icon {
-    @apply flex text-3xl absolute transform -translate-x-1/2 top-16 -right-14 z-40;
+    @apply flex text-3xl absolute transform -translate-x-1/2 top-16 -right-24 z-40;
   }
 
   .header-container .nav-menu.left,

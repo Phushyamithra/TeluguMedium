@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .container {
   position: relative;
@@ -80,5 +83,20 @@
   }
   50% {
     border-color: #ffffff;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .typewriter-container .typewriter p {
+    /* overflow: hidden; */
+    border-right: 0.15em solid #ffffff; /* Light color for the cursor */
+    white-space: nowrap;
+    /* margin: 0 auto; Center typewriter content */
+    letter-spacing: 0.15em;
+    font-size: 5em; /* Larger text size */
+    font-weight: 500; /* Bolder text */
+    color: #ffffff; /* Light text color */
+    animation: typing 5s steps(40, end), blink-caret 0.115s step-end infinite; /* Slower typing animation */
   }
 }

@@ -46,7 +46,7 @@
 /* Tablets and above */
 @media (min-width: 601px) and (max-width: 1024px) {
   .footer-container {
-    @apply flex-col justify-between p-5;
+    @apply flex-col justify-end p-5;
   }
 
   .footer-links {

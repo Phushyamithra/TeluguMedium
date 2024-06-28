@@ -38,6 +38,9 @@
 
 /* Responsive Styling */
 @media (max-width: 768px) {
+  .wishlist-container {
+    @apply mt-32;
+  }
   .wishlist-heading {
     @apply text-xl;
   }
