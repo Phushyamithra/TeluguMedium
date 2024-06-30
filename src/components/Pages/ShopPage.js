@@ -60,6 +60,7 @@ const ShopPage = () => {
 
     const handleCategoryClick = () => {
         const url = window.location.origin + '/list';
+        console.log(url);
         window.open(url, '_blank');
     };
 

@@ -74,6 +74,7 @@ const ListPage = ({ category }) => {
         { value: 'price-desc', label: 'Price: High to Low' },
     ];
 
+
     return (
         <TemplatePage src={bg} type='image'>
             <div className="listpage-container">

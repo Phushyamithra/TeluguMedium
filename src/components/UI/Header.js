@@ -81,7 +81,7 @@ const Header = () => {
               <Link to="/story" className="nav-link button_slide slide_down">OUR STORY</Link>
               <Link to="/contact" className="nav-link button_slide slide_down">CONTACT</Link>
               <Link to="/account" className="nav-link button_slide slide_down">ACCOUNT</Link>
-              <Link to="/favorites" className="nav-link button_slide slide_down">WISHLIST</Link>
+              <Link to="/wishlist" className="nav-link button_slide slide_down">WISHLIST</Link>
 
               <span className="nav-link button_slide slide_down" onClick={toggleCart}>CART</span>
             </div>

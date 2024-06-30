@@ -8,6 +8,7 @@ import WishListPage from './components/Pages/WishListPage';
 import HomePage from './components/Pages/HomePage';
 import LoginPage from './components/Pages/LoginPage';
 import ListPage from './components/Pages/ListPage';
+import { ProductDetailPage } from './components/Pages/ProductDetailPage';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/wishlist" element={<WishListPage />} />
           <Route path="/list" element={<ListPage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/productdetail/:productId" element={<ProductDetailPage />} />
         </Routes>
       </Router>
     </div>
