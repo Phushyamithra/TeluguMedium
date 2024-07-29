@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.read-bg {
+  @apply mt-40 flex flex-row;
+}
+
+.read-content {
+  @apply flex flex-col bg-blue-950 bg-opacity-30 w-96 ml-64 mb-24 rounded-3xl;
+  height: 25em;
+  width: 25em;
+}
+
+.main-title {
+  @apply text-white text-5xl mt-5;
+}
+
+.read-p {
+  @apply mt-5 ml-2 text-white text-2xl font-serif leading-9 w-96;
+}
+
+.read-image {
+  @apply ml-20 mt-24;
+}
+.read-button {
+  @apply bg-sky-950 text-white text-4xl rounded-3xl w-52 h-12 ml-20 mt-5;
+}

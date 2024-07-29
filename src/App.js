@@ -9,11 +9,11 @@ import HomePage from './components/Pages/HomePage';
 import LoginPage from './components/Pages/LoginPage';
 import ListPage from './components/Pages/ListPage';
 import { ProductDetailPage } from './components/Pages/ProductDetailPage';
+import ReadPage from './components/Pages/ReadPage';
 
 const App = () => {
   return (
     <div className="App">
-
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -25,6 +25,7 @@ const App = () => {
           <Route path="/list" element={<ListPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/productdetail/:productId" element={<ProductDetailPage />} />
+          <Route path='/read' element={<ReadPage />} />
         </Routes>
       </Router>
     </div>

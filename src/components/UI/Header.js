@@ -60,7 +60,7 @@ const Header = () => {
 
         <Link to="/contact" className="nav-link button_slide slide_down">CONTACT</Link>
         <Link to="/account" className="nav-link button_slide slide_down">ACCOUNT</Link>
-        <Link to="/account" className="nav-link button_slide slide_down">READ</Link>
+        <Link to="/read" className="nav-link button_slide slide_down">READ</Link>
       </div>
       <div className='nav-icons'>
         <Link to="/wishlist" className="nav-link button_slide slide_down"><FaHeart /></Link>
@@ -82,8 +82,8 @@ const Header = () => {
               <Link to="/contact" className="nav-link button_slide slide_down">CONTACT</Link>
               <Link to="/account" className="nav-link button_slide slide_down">ACCOUNT</Link>
               <Link to="/wishlist" className="nav-link button_slide slide_down">WISHLIST</Link>
-
-              <span className="nav-link button_slide slide_down" onClick={toggleCart}>CART</span>
+              <Link to="/read" className="nav-link button_slide slide_down">READ</Link>
+              {/* <span className="nav-link button_slide slide_down" onClick={toggleCart}>CART</span> */}
             </div>
           )
         }
